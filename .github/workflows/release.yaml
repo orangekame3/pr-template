@@ -8,3 +8,4 @@ changelog:
     - title: Exciting New Features 🎉
       labels:
         - b
+        - pr-release
