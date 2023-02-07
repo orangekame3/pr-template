@@ -1,3 +1,4 @@
+# .github/workflows/git-pr-release.yaml
 name: git-pr-release
 on:
   push:
@@ -21,4 +22,4 @@ jobs:
           GIT_PR_RELEASE_BRANCH_STAGING: develop
           GIT_PR_RELEASE_LABELS: pr-release
           # GIT_PR_RELEASE_TEMPLATE: .github/git-pr-release.erb
-          TZ: Asia/Tokyo
+          # TZ: Asia/Tokyo
