@@ -1,0 +1,11 @@
+# .github/release.yml
+
+changelog:
+  categories:
+    - title: Breaking Changes 🛠
+      labels:
+        - a
+    - title: Exciting New Features 🎉
+      labels:
+        - b
+        - pr-release
