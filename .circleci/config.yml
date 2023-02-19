@@ -1,0 +1,29 @@
+# .cicleci/config.yml
+
+version: 2.1
+
+orbs:
+  gh: circleci/github-cli@2.2.0
+
+executors:
+  base:
+    docker:
+      - image: "cimg/base:stable"
+
+jobs:
+  add-label:
+    executor: base
+    working_directory: ~/repo
+    steps:
+      - gh/setup:
+          version: 2.23.0
+      - checkout
+      - run:
+          name: Add-Label
+          command: |
+            bash add_label.sh
+workflows:
+  version: 2
+  add-label:
+    jobs:
+      - add-label
